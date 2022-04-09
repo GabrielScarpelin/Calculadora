@@ -44,6 +44,7 @@ body{
 }
 .fundo:hover{
     cursor: pointer;
+    background-color: rgb(178, 6, 0);
 }
 .fundo:hover .paragraph{
     animation-name: fly;
@@ -62,10 +63,10 @@ body{
     display: flex;
     justify-content: right;
 }
-#igual{
+#tI {
     grid-row: span 2;
 }
-#zero {
+#t0 {
     grid-column: span 2;
 }
 #resultado{
@@ -78,7 +79,7 @@ body{
     height:2vh;
     width: 4vw;
 }
-#soma, #sub, #mult, #dividi{
+#tMais, #tMenos, #tMult, #tDiv{
     background-color: rgb(178, 6, 0);
 }
 @keyframes fly{
@@ -87,7 +88,7 @@ body{
     }
 
 }
-#igual{
+#tI{
     background-color: #FF5F00;
 }
 @media screen {

@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Mahaba';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Mahaba'), url('https://fonts.cdnfonts.com/s/21631/Mahaba Bold.woff') format('woff');
+}
+.calc-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Mahaba', sans-serif;
+    text-align: center;
+    width: 100%;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: rgb(238,238,238);
+}
+.calc-container1{
+    background-color: #00092C;
+    opacity: 0.95;
+    overflow: auto;
+    border-radius: 10px;
+    padding: 5px;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.fundo{
+    background-color: grey;
+    text-align: center;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mahaba', sans-serif;
+    border-radius: 4px;
+
+}
+.fundo:hover{
+    cursor: pointer;
+}
+.fundo:hover .paragraph{
+    animation-name: fly;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+#fundo-resultado{
+    background-color: white;
+    margin: 5px;
+    height: 5vh;
+    border-radius: 5px;
+    text-align: right;
+    grid-column: span 4;
+    display: flex;
+    justify-content: right;
+}
+#igual{
+    grid-row: span 2;
+}
+#zero {
+    grid-column: span 2;
+}
+#resultado{
+    font-family: 'Mahaba', sans-serif;
+    margin-right: 5px;
+    font-size: 22px;
+    align-self: center;
+}
+.paragraph{
+    height:2vh;
+    width: 4vw;
+}
+#soma, #sub, #mult, #dividi{
+    background-color: rgb(178, 6, 0);
+}
+@keyframes fly{
+    100%{
+        transform: translateX(1px)
+    }
+
+}
+#igual{
+    background-color: #FF5F00;
+}
+@media screen {
+    @media (max-width: 600px){
+        .calc-container1{
+            width: 30vh;
+        }
+    }
+}

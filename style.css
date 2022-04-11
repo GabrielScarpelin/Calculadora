@@ -91,7 +91,7 @@ body{
     background-color: #FF5F00;
 }
 @media screen {
-    @media (max-width: 600px){
+    @media (max-width: 1000px){
         .calc-container1{
             width: 30vh;
         }
